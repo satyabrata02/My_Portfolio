@@ -1,0 +1,7 @@
+D:\Portfolio\Angular_Code>ng new ecommerce  --standalone=false
+? Which stylesheet format would you like to use? CSS
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No
+
+D:\Portfolio\Angular_Code\my_portfolio>npm install @emailjs/browser --save
+
+D:\Portfolio\Angular_Code\my_portfolio>ng serve -o
