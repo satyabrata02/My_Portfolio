@@ -1,460 +1,460 @@
 <!--==================== HEADER ====================-->
 <header class="header" id="header">
-  <nav class="nav container">
-     <a href="#home" class="nav__logo">
-         <span class="nav__logo-circle">S</span>
-         <span class="nav__logo-name">Satyabrata Panda</span>
-     </a>
+    <nav class="nav container">
+        <a href="#home" class="nav__logo">
+            <span class="nav__logo-circle">S</span>
+            <span class="nav__logo-name">Satyabrata Panda</span>
+        </a>
 
-     <div class="nav__menu" id="nav-menu" [ngClass]="{'show-menu': isMenu}">
-         <span class="nav__title">Menu</span>
-         <h3 class="nav__name">Satyabrata</h3>
+        <div class="nav__menu" id="nav-menu" [ngClass]="{'show-menu': isMenu}">
+            <span class="nav__title">Menu</span>
+            <h3 class="nav__name">Satyabrata</h3>
 
-         <ul class="nav__list">
-             <li class="nav__item">
-                 <a href="#home" class="nav__link" [class.active-link]="isActive('home')" (click)="menu_btn()">Home</a>
-             </li>
-             <li class="nav__item">
-                 <a href="#about" class="nav__link" [class.active-link]="isActive('about')" (click)="menu_btn()">About Me</a>
-             </li>
-             <li class="nav__item">
-                 <a href="#services" class="nav__link" [class.active-link]="isActive('services')" (click)="menu_btn()">My Services</a>
-             </li>
-             <li class="nav__item">
-                 <a href="#projects" class="nav__link" [class.active-link]="isActive('projects')" (click)="menu_btn()">Projects</a>
-             </li>
-             <li class="nav__item">
-                 <a href="#contact" class="nav__link nav__link-button" [class.active-link]="isActive('contact')" (click)="menu_btn()">Contact Me</a>
-             </li>
-         </ul>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link" [class.active-link]="isActive('home')" (click)="menu_btn()">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link" [class.active-link]="isActive('about')" (click)="menu_btn()">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link" [class.active-link]="isActive('services')" (click)="menu_btn()">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link" [class.active-link]="isActive('projects')" (click)="menu_btn()">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link nav__link-button" [class.active-link]="isActive('contact')" (click)="menu_btn()">Contact Me</a>
+                </li>
+            </ul>
 
-         <!-- Close button -->
-         <div class="nav__close" id="nav-close" (click)="menu_btn()">
-             <i class="ri-close-line"></i>
-         </div>
-     </div>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close" (click)="menu_btn()">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
 
-     <div class="nav__buttons">
-         <!-- Theme button -->
-         <i class="ri-moon-line change-theme" id="theme-button" (click)="darkOn()" *ngIf="isDarkMode1"></i>
-         
+        <div class="nav__buttons">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button" (click)="darkOn()" *ngIf="isDarkMode1"></i>
+            
         <i class="ri-sun-line change-theme" *ngIf="isDarkMode2" (click)="darkOn()"></i>
         
-         
-         <!-- Toggle button -->
-         <div class="nav__toggle" id="nav-toggle" (click)="menu_btn()">
-             <i class="ri-menu-4-fill"></i>
-         </div>
-     </div>
-  </nav>
+            
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle" (click)="menu_btn()">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!--==================== MAIN ====================-->
 <main class="main">
-  <!--==================== HOME ====================-->
-  <section class="home section" id="home">
-     <div class="home__container container grid">
-         <h1 class="home__name">
-             Satyabrata Panda
-         </h1>
+<!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <h1 class="home__name">
+                Satyabrata Panda
+            </h1>
 
-         <div class="home__perfil">
-             <div class="home__image">
-                 <img src="../assets/satya-1.jpg" alt="image" class="home__img">
-                 <div class="home__shadow"></div>
+            <div class="home__perfil">
+                <div class="home__image">
+                    <img src="../assets/satya-1.jpg" alt="image" class="home__img">
+                    <div class="home__shadow"></div>
 
-                 <img src="../assets/curved-arrow.svg" alt="" class="home__arrow">
-                 <img src="../assets/random-lines.svg" alt="" class="home__line">
+                    <img src="../assets/curved-arrow.svg" alt="" class="home__arrow">
+                    <img src="../assets/random-lines.svg" alt="" class="home__line">
 
-                 <div class="geometric-box"></div>
-             </div>
+                    <div class="geometric-box"></div>
+                </div>
 
-             <div class="home__social">
-                 <a href="https://www.instagram.com/satya.brata_panda/" target="_blank" class="home__social-link" style="--social-clr: #c32aa3;">
-                     <i class="ri-instagram-line"></i>
-                 </a>
-                 <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank" class="home__social-link" style="--social-clr: #0A66C2;">
-                     <i class="ri-linkedin-line"></i>
-                 </a>
-                 <a href="https://github.com/satyabrata02" target="_blank" class="home__social-link" style="--social-clr: #1F2328;">
-                     <i class="ri-github-line"></i>
-                 </a>
-             </div>
-         </div>
+                <div class="home__social">
+                    <a href="https://www.instagram.com/satya.brata_panda/" target="_blank" class="home__social-link" style="--social-clr: #c32aa3;">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank" class="home__social-link" style="--social-clr: #0A66C2;">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="https://github.com/satyabrata02" target="_blank" class="home__social-link" style="--social-clr: #1F2328;">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
 
-         <div class="home__info">
-             <p class="home__description">
-                 <b>Full Stack Python Developer</b>, with knowledge in Python, RestAPI and Django web development and design, I offer the best projects resulting in quality work.
-             </p>
+            <div class="home__info">
+                <p class="home__description">
+                    <b>Full Stack Python Developer</b>, with knowledge in Python, RestAPI and Django web development and design, I offer the best projects resulting in quality work.
+                </p>
 
-             <a href="#about" class="home__scroll">
-                 <div class="home__scroll-box">
-                     <i class="ri-arrow-down-s-line"></i>
-                 </div>
+                <a href="#about" class="home__scroll">
+                    <div class="home__scroll-box">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
 
-                 <span class="home__scroll-text">Scroll Down</span>
-             </a>
-         </div>
-     </div>
-  </section>
+                    <span class="home__scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!--==================== ABOUT ====================-->
-  <section class="about section" id="about">
-     <div class="about__container container grid">
-         <h2 class="section__title-1">
-             <span>About Me.</span>
-         </h2>
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <h2 class="section__title-1">
+                <span>About Me.</span>
+            </h2>
 
-         <div class="about__perfil">
-             <div class="about__image">
-                 <img src="../assets/satya-2.jpg" alt="image" class="about__img">
+            <div class="about__perfil">
+                <div class="about__image">
+                    <img src="../assets/satya-2.jpg" alt="image" class="about__img">
 
-                 <div class="about__shadow"></div>
+                    <div class="about__shadow"></div>
 
-                 <div class="geometric-box"></div>
-                 <img src="../assets/random-lines.svg" alt="random line" class="about__line">
-                 <div class="about__box"></div>
-             </div>
-         </div>
+                    <div class="geometric-box"></div>
+                    <img src="../assets/random-lines.svg" alt="random line" class="about__line">
+                    <div class="about__box"></div>
+                </div>
+            </div>
 
-         <div class="about__info">
-             <p class="about__description">
-                 Passionate about creating <b>Applications</b> using Python and Django with <b>UI/UX User Interface</b>, I have years of experience and many clients are happy with the projects carried out.
-             </p>
+            <div class="about__info">
+                <p class="about__description">
+                    Passionate about creating <b>Applications</b> using Python and Django with <b>UI/UX User Interface</b>, I have years of experience and many clients are happy with the projects carried out.
+                </p>
 
-             <ul class="about__list">
-                 <li class="about__item">
-                     <b>My Skills Are:</b> HTML, CSS, JavaScript, Angular, Git & GitHub, Bootstrap, Python, Django & RestAPI.
-                 </li>
-             </ul>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <b>My Skills Are:</b> HTML, CSS, JavaScript, Angular, Git & GitHub, Bootstrap, Python, Django & RestAPI.
+                    </li>
+                </ul>
 
-             <div class="about__buttons">
-                 <a href="#contact" class="button">
-                     <i class="ri-send-plane-line"></i> Contact Me
-                 </a>
+                <div class="about__buttons">
+                    <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contact Me
+                    </a>
 
-                 <a href="../assets/Satyabrata_Resume.pdf" class="button" download>
-                     <i class="ri-download-fill"></i> Resume
-                 </a>
+                    <a href="../assets/Satyabrata_Resume.pdf" class="button" download>
+                        <i class="ri-download-fill"></i> Resume
+                    </a>
 
-                 <!-- <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" class="button__ghost" target="_blank" style="--social-clr: #0A66C2;">
-                     <i class="ri-linkedin-line"></i>
-                 </a> -->
-             </div>
-         </div>
-     </div>
-  </section>
+                    <!-- <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" class="button__ghost" target="_blank" style="--social-clr: #0A66C2;">
+                        <i class="ri-linkedin-line"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!--==================== SERVICES ====================-->
-  <section class="services section" id="services">
-     <h2 class="section__title-2">
-         <span>Services.</span>
-     </h2>
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+        <h2 class="section__title-2">
+            <span>Services.</span>
+        </h2>
 
-     <div class="services__container container grid">
-         <article class="services__card">
-             <div class="services__border"></div>
+        <div class="services__container container grid">
+            <article class="services__card">
+                <div class="services__border"></div>
 
-             <div class="services__content">
-                 <div class="services__icon">
-                     <div class="services__box"></div>
-                     <i class="ri-window-line"></i>
-                 </div>
+                <div class="services__content">
+                    <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-window-line"></i>
+                    </div>
 
-                 <h2 class="services__title">Web Application</h2>
+                    <h2 class="services__title">Web Application</h2>
 
-                 <p class="services__description">
-                     Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant  to use for the user.
-                 </p>
-             </div>
-         </article>
-         <article class="services__card">
-             <div class="services__border"></div>
+                    <p class="services__description">
+                        Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant  to use for the user.
+                    </p>
+                </div>
+            </article>
+            <article class="services__card">
+                <div class="services__border"></div>
 
-             <div class="services__content">
-                 <div class="services__icon">
-                     <div class="services__box"></div>
-                     <i class="ri-code-box-line"></i>
-                 </div>
+                <div class="services__content">
+                    <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-code-box-line"></i>
+                    </div>
 
-                 <h2 class="services__title">Development</h2>
+                    <h2 class="services__title">Development</h2>
 
-                 <p class="services__description">
-                     Custom website or application development tailored to your specifications, designed to provide a flawless user experience.
-                 </p>
-             </div>
-         </article>
-         <article class="services__card">
-             <div class="services__border"></div>
+                    <p class="services__description">
+                        Custom website or application development tailored to your specifications, designed to provide a flawless user experience.
+                    </p>
+                </div>
+            </article>
+            <article class="services__card">
+                <div class="services__border"></div>
 
-             <div class="services__content">
-                 <div class="services__icon">
-                     <div class="services__box"></div>
-                     <i class="ri-smartphone-line"></i>
-                 </div>
+                <div class="services__content">
+                    <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-smartphone-line"></i>
+                    </div>
 
-                 <h2 class="services__title">Mobile App</h2>
+                    <h2 class="services__title">Mobile App</h2>
 
-                 <p class="services__description">
-                     Design and transform website projects into mobile apps to provide a seamless user experience.
-                 </p>
-             </div>
-         </article>
-     </div>
-  </section>
+                    <p class="services__description">
+                        Design and transform website projects into mobile apps to provide a seamless user experience.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
 
-  <!--==================== PROJECTS ====================-->
-  <section class="projects section" id="projects">
-     <h2 class="section__title-1">
-         <span>Projects.</span>
-     </h2>
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+            <span>Projects.</span>
+        </h2>
 
-     <div class="projects__container container grid">
-         <article class="projects__card">
-             <div class="projects__image">
-                 <img src="../assets/project-1.png" alt="project-1 image" class="projects__img">
+        <div class="projects__container container grid">
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="../assets/project-4.png" alt="project-4 image" class="projects__img">
 
-                 <a href="https://github.com/satyabrata02/Chatting_System_V2.git" class="projects__button button">
-                     <i class="ri-arrow-right-up-line"></i>
-                 </a>
-             </div>
+                    <a href="https://s-mart-1.netlify.app" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-             <div class="projects__content">
-                 <h3 class="projects__subtitle">Website</h3>
-                 <h2 class="projects__title">Chatting System</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">S-Mart</h2>
 
-                 <p class="projects__description">
-                     For providing a chat facility in this application used in a particular organization: Online chat is a form of communication that allows for two-way conversations.
-                 </p>
-             </div>
+                    <p class="projects__description">
+                        It aims to provide a comprehensive ecommerce solution that enhances the buying and selling experience for users. This platform integrates essential features to ensure efficiency, security, and satisfaction across the ecommerce journey.
+                    </p>
+                </div>
 
-             <div class="projects__buttons">
-                 <a href="https://github.com/satyabrata02/Chatting_System_V2.git" target="_blank" class="projects__link">
-                     <i class="ri-github-line"></i> View
-                 </a>
-                 <a target="_blank" class="projects__link">
-                     <i class="ri-dribbble-line"></i> View
-                 </a>
-             </div>
-         </article>
-         <article class="projects__card">
-             <div class="projects__image">
-                 <img src="../assets/project-2.png" alt="project-2 image" class="projects__img">
+                <div class="projects__buttons">
+                    <a href="https://github.com/satyabrata02/S-Mart.git" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a href="https://s-mart-1.netlify.app" target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="../assets/project-1.png" alt="project-1 image" class="projects__img">
 
-                 <a href="https://github.com/satyabrata02/Supply_Chain_Management.git" class="projects__button button">
-                     <i class="ri-arrow-right-up-line"></i>
-                 </a>
-             </div>
+                    <a href="https://github.com/satyabrata02/Chatting_System_V2.git" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-             <div class="projects__content">
-                 <h3 class="projects__subtitle">Website</h3>
-                 <h2 class="projects__title">Supply Chain Management System</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Chatting System</h2>
 
-                 <p class="projects__description">
-                     It enhances efficiency, reduces costs, and improves customer satisfaction by optimizing the entire supply chain process from procurement to delivery. Its features make it an indispensable tool for businesses.
-                 </p>
-             </div>
+                    <p class="projects__description">
+                        For providing a chat facility in this application used in a particular organization: Online chat is a form of communication that allows for two-way conversations.
+                    </p>
+                </div>
 
-             <div class="projects__buttons">
-                 <a href="https://github.com/satyabrata02/Supply_Chain_Management.git" target="_blank" class="projects__link">
-                     <i class="ri-github-line"></i> View
-                 </a>
-                 <a target="_blank" class="projects__link">
-                     <i class="ri-dribbble-line"></i> View
-                 </a>
-             </div>
-         </article>
-         <article class="projects__card">
-             <div class="projects__image">
-                 <img src="../assets/project-3.png" alt="project-3 image" class="projects__img">
+                <div class="projects__buttons">
+                    <a href="https://github.com/satyabrata02/Chatting_System_V2.git" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="../assets/project-2.png" alt="project-2 image" class="projects__img">
 
-                 <a href="https://github.com/satyabrata02/Hospital_Management_System.git" class="projects__button button">
-                     <i class="ri-arrow-right-up-line"></i>
-                 </a>
-             </div>
+                    <a href="https://github.com/satyabrata02/Supply_Chain_Management.git" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-             <div class="projects__content">
-                 <h3 class="projects__subtitle">Website</h3>
-                 <h2 class="projects__title">Hospital Management System</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Supply Chain Management System</h2>
 
-                 <p class="projects__description">
-                     This app aims to improve patient care delivery, operational efficiency, and administrative effectiveness in healthcare settings. It enables healthcare providers to deliver high-quality care.
-                 </p>
-             </div>
+                    <p class="projects__description">
+                        It enhances efficiency, reduces costs, and improves customer satisfaction by optimizing the entire supply chain process from procurement to delivery. Its features make it an indispensable tool for businesses.
+                    </p>
+                </div>
 
-             <div class="projects__buttons">
-                 <a href="https://github.com/satyabrata02/Hospital_Management_System.git" target="_blank" class="projects__link">
-                     <i class="ri-github-line"></i> View
-                 </a>
-                 <a target="_blank" class="projects__link">
-                     <i class="ri-dribbble-line"></i> View
-                 </a>
-             </div>
-         </article>
-         <article class="projects__card">
-             <div class="projects__image">
-                 <img src="../assets/project-4.png" alt="project-4 image" class="projects__img">
+                <div class="projects__buttons">
+                    <a href="https://github.com/satyabrata02/Supply_Chain_Management.git" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="../assets/project-3.png" alt="project-3 image" class="projects__img">
 
-                 <a href="https://s-mart-1.netlify.app" class="projects__button button">
-                     <i class="ri-arrow-right-up-line"></i>
-                 </a>
-             </div>
+                    <a href="https://github.com/satyabrata02/Hospital_Management_System.git" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-             <div class="projects__content">
-                 <h3 class="projects__subtitle">Website</h3>
-                 <h2 class="projects__title">S-Mart</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Hospital Management System</h2>
 
-                 <p class="projects__description">
-                     It aims to provide a comprehensive ecommerce solution that enhances the buying and selling experience for users. This platform integrates essential features to ensure efficiency, security, and satisfaction across the ecommerce journey.
-                 </p>
-             </div>
+                    <p class="projects__description">
+                        This app aims to improve patient care delivery, operational efficiency, and administrative effectiveness in healthcare settings. It enables healthcare providers to deliver high-quality care.
+                    </p>
+                </div>
 
-             <div class="projects__buttons">
-                 <a href="https://github.com/satyabrata02/S-Mart.git" target="_blank" class="projects__link">
-                     <i class="ri-github-line"></i> View
-                 </a>
-                 <a href="https://s-mart-1.netlify.app" target="_blank" class="projects__link">
-                     <i class="ri-dribbble-line"></i> View
-                 </a>
-             </div>
-         </article>
-         <article class="projects__card">
-             <div class="projects__image">
-                 <img src="../assets/project-5.jpg" alt="project-5 image" class="projects__img">
+                <div class="projects__buttons">
+                    <a href="https://github.com/satyabrata02/Hospital_Management_System.git" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                    </a>
+                </div>
+            </article>
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="../assets/project-5.jpg" alt="project-5 image" class="projects__img">
 
-                 <a class="projects__button button">
-                     <i class="ri-arrow-right-up-line"></i>
-                 </a>
-             </div>
+                    <a class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-             <div class="projects__content">
-                 <h3 class="projects__subtitle">App</h3>
-                 <h2 class="projects__title">Fast-Food App</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">App</h3>
+                    <h2 class="projects__title">Fast-Food App</h2>
 
-                 <p class="projects__description">
-                     It enhances convenience for customers by offering a streamlined ordering process, flexible delivery options, and personalized experiences. For fast-food restaurants, it optimizes efficient order management, integration with POS systems.
-                 </p>
-             </div>
+                    <p class="projects__description">
+                        It enhances convenience for customers by offering a streamlined ordering process, flexible delivery options, and personalized experiences. For fast-food restaurants, it optimizes efficient order management, integration with POS systems.
+                    </p>
+                </div>
 
-             <div class="projects__buttons">
-                 <a target="_blank" class="projects__link">
-                     <i class="ri-github-line"></i> View
-                 </a>
-                 <a target="_blank" class="projects__link">
-                     <i class="ri-dribbble-line"></i> View
-                 </a>
-             </div>
-         </article>
-     </div>
-  </section>
+                <div class="projects__buttons">
+                    <a target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
 
-  <!--==================== CONTACT ====================-->
-  <section class="contact section" id="contact">
-     <div class="contact__container grid">
-         <div class="contact__data">
-             <h2 class="section__title-2">
-                 <span>Contact Me.</span>
-             </h2>
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+        <div class="contact__container grid">
+            <div class="contact__data">
+                <h2 class="section__title-2">
+                    <span>Contact Me.</span>
+                </h2>
 
-             <p class="contact__description-1">
-                 I will read all emails. Send me any message you want and I'll get back to you.
-             </p>
-             <p class="contact__description-2">
-                 I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
-             </p>
+                <p class="contact__description-1">
+                    I will read all emails. Send me any message you want and I'll get back to you.
+                </p>
+                <p class="contact__description-2">
+                    I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
+                </p>
 
-             <div class="geometric-box"></div>
-         </div>
+                <div class="geometric-box"></div>
+            </div>
 
-         <div class="contact__mail">
-             <h2 class="contact__title">
-                 Send me a message
-             </h2>
+            <div class="contact__mail">
+                <h2 class="contact__title">
+                    Send me a message
+                </h2>
 
-             <form action="javascript:void(0)" (submit)="sendmail()" class="contact__form" id="contact-form" [formGroup]="form">
-                 <div class="contact__group">
-                     <div class="contact__box">
-                         <input type="text" formControlName="user_name" name="user_name" class="contact__input" id="name" required placeholder="Your Name">
-                         <label for="name" class="contact__label">Your Name</label>
-                     </div>
-                     <div class="contact__box">
-                         <input type="email" formControlName="user_email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                         <label for="email" class="contact__label">Email Address</label>
-                     </div>
-                 </div>
+                <form action="javascript:void(0)" (submit)="sendmail()" class="contact__form" id="contact-form" [formGroup]="form">
+                    <div class="contact__group">
+                        <div class="contact__box">
+                            <input type="text" formControlName="user_name" name="user_name" class="contact__input" id="name" required placeholder="Your Name">
+                            <label for="name" class="contact__label">Your Name</label>
+                        </div>
+                        <div class="contact__box">
+                            <input type="email" formControlName="user_email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                            <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                    </div>
 
-                 <div class="contact__box">
-                     <input type="text" formControlName="user_subject" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                     <label for="subject" class="contact__label">Subject</label>
-                 </div>
-                 <div class="contact__box contact__area">
-                     <textarea formControlName="user_message" name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
-                     <label for="message" class="contact__label">Message</label>
-                 </div>
+                    <div class="contact__box">
+                        <input type="text" formControlName="user_subject" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                    </div>
+                    <div class="contact__box contact__area">
+                        <textarea formControlName="user_message" name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                    </div>
 
-                 <p class="contact__message" id="contact-message">{{msg}}</p>
+                    <p class="contact__message" id="contact-message">{{msg}}</p>
 
-                 <button type="submit" class="contact__button button">
-                     <i class="ri-send-plane-line"></i> Send Message
-                 </button>
-             </form>
-         </div>
+                    <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i> Send Message
+                    </button>
+                </form>
+            </div>
 
-         <div class="contact__social">
-             <img src="../assets/curved-arrow.svg" alt="" class="contact__social-arrow">
+            <div class="contact__social">
+                <img src="../assets/curved-arrow.svg" alt="" class="contact__social-arrow">
 
-             <div class="contact__social-data">
-                 <div>
-                     <p class="contact__social-description-1">
-                         Does not send emails
-                     </p>
-                     <p class="contact__social-description-2">
-                         Write me on my social networks
-                     </p>
-                 </div>
+                <div class="contact__social-data">
+                    <div>
+                        <p class="contact__social-description-1">
+                            Does not send emails
+                        </p>
+                        <p class="contact__social-description-2">
+                            Write me on my social networks
+                        </p>
+                    </div>
 
-                 <div class="contact__social-links">
-                     <a href="https://www.facebook.com/satyabrata.panda.3956690?mibextid=ZbWKwL" target="_blank" class="contact__social-link" style="--social-clr: #1877f2;">
-                         <i class="ri-facebook-line"></i>
-                     </a>
-                     <a href="https://www.instagram.com/satya.brata_panda?igsh=MTNuNHBuMXg4MTUyOQ==" target="_blank" class="contact__social-link" style="--social-clr: #c32aa3;">
-                         <i class="ri-instagram-line"></i>
-                     </a>
-                     <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank" class="contact__social-link" style="--social-clr: #0A66C2;">
-                         <i class="ri-linkedin-line"></i>
-                     </a>
-                 </div>
-             </div>
-         </div>
-     </div>
-  </section>
+                    <div class="contact__social-links">
+                        <a href="https://www.facebook.com/satyabrata.panda.3956690?mibextid=ZbWKwL" target="_blank" class="contact__social-link" style="--social-clr: #1877f2;">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/satya.brata_panda?igsh=MTNuNHBuMXg4MTUyOQ==" target="_blank" class="contact__social-link" style="--social-clr: #c32aa3;">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank" class="contact__social-link" style="--social-clr: #0A66C2;">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!--==================== FOOTER ====================-->
 <footer class="footer">
-  <div class="footer__container container grid">
-     <ul class="footer__links">
-         <li>
-             <a href="#home" class="footer__link">Home</a>
-         </li>
-         <li>
-             <a href="#about" class="footer__link">About</a>
-         </li>
-         <li>
-             <a href="#services" class="footer__link">Services</a>
-         </li>
-         <li>
-             <a href="#projects" class="footer__link">Projects</a>
-         </li>
-     </ul>
+    <div class="footer__container container grid">
+        <ul class="footer__links">
+            <li>
+                <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+                <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+                <a href="#projects" class="footer__link">Projects</a>
+            </li>
+        </ul>
 
-     <span class="footer__copy">
-         &#169; All Rights Reserved By <a href="#">Satyabrata Panda.</a>
-     </span>
-  </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By <a href="#">Satyabrata Panda.</a>
+        </span>
+    </div>
 </footer>
 
 <!--========== SCROLL UP ==========-->
 <a href="#" class="scrollup" id="scroll-up">
- <i class="ri-arrow-up-s-line"></i>
+    <i class="ri-arrow-up-s-line"></i>
 </a>
