@@ -780,6 +780,7 @@ body.dark-theme{
   bottom: -1.5rem;
   padding: .8rem;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  cursor: pointer;
 }
 
 .projects__content{
